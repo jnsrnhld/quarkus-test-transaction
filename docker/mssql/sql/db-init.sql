@@ -1,0 +1,7 @@
+CREATE TABLE todo (
+    id BIGINT IDENTITY(1,1) PRIMARY KEY,
+    title NVARCHAR(255) NOT NULL,
+    description NVARCHAR(MAX) NULL,
+    completed BIT NOT NULL DEFAULT 0,
+    created_at DATETIME2 NOT NULL DEFAULT GETDATE()
+);

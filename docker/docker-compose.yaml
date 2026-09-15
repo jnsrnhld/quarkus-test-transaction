@@ -1,0 +1,18 @@
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    command: /bin/bash /entrypoint.sh
+    ports:
+      - "1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - MSSQL_SA_PASSWORD=DevPassword!23
+    volumes:
+      - ./mssql/docker-entrypoint.sh:/entrypoint.sh
+      - ./mssql/docker-db-init.sh:/db-init.sh
+      - ./mssql/sql:/sql
+    labels:
+      io.quarkus.devservices.compose.wait_for.logs: ".*Finished set up.*"
+      io.quarkus.devservices.compose.config_map.port.1433: dynamic.mssql.port

@@ -1,0 +1,23 @@
+[versions]
+quarkus = "3.39.1"
+jdbi = "3.53.0"
+lombok = "9.5.0"
+
+[libraries]
+quarkus_bom = { module = "io.quarkus.platform:quarkus-bom", version.ref = "quarkus" }
+quarkus_arc = { module = "io.quarkus:quarkus-arc" }
+quarkus_jdbcMssql = { module = "io.quarkus:quarkus-jdbc-mssql" }
+quarkus_jdbcPostgressql = { module = "io.quarkus:quarkus-jdbc-postgresql" }
+quarkus_reastyReactive = { module = "io.quarkus:quarkus-rest" }
+quarkus_reastyReactiveJackson = { module = "io.quarkus:quarkus-rest-jackson" }
+quarkus_slf4j = { module = "org.jboss.slf4j:slf4j-jboss-logmanager" }
+jdbi_core = { module = "org.jdbi:jdbi3-core", version.ref = "jdbi" }
+jdbi_sqlobject = { module = "org.jdbi:jdbi3-sqlobject", version.ref = "jdbi" }
+test_quarkus_restAssured = { module = "io.rest-assured:rest-assured" }
+test_quarkus_junit5 = { module = "io.quarkus:quarkus-junit5" }
+test_assertj = "org.assertj:assertj-core:3.27.7"
+test_testcontainers = "org.testcontainers:testcontainers:2.0.3"
+
+[plugins]
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
+lombok = { id = "io.freefair.lombok", version.ref = "lombok" }

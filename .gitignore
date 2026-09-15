@@ -1,0 +1,8 @@
+.gradle/
+build/
+.quarkus/
+.idea/
+*.iml
+.vscode/
+.env
+*.log
