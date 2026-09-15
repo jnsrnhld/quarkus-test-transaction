@@ -1,4 +1,4 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.Consumes;

@@ -1,4 +1,4 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;

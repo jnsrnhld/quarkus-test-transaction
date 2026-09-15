@@ -1,4 +1,4 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import java.time.Instant;
 import org.jdbi.v3.core.mapper.reflect.ColumnName;

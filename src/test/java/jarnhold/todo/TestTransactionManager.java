@@ -1,8 +1,7 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InjectableBean;
-import io.quarkus.narayana.jta.runtime.NotifyingTransactionManager;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.Priority;
 import jakarta.enterprise.context.ApplicationScoped;

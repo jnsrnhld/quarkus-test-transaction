@@ -1,4 +1,4 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import io.agroal.api.AgroalDataSource;
 import io.quarkus.arc.Arc;

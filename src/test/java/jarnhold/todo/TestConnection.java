@@ -1,4 +1,4 @@
-package org.acme.todo;
+package jarnhold.todo;
 
 import java.sql.Connection;
 import java.sql.SQLException;
